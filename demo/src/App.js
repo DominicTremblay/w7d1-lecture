@@ -1,34 +1,20 @@
 import React from 'react';
 import './App.css';
-import MovieItem from './MovieItem';
+import MenuItem from './MenuItem';
 
 function App(props) {
-  console.log(props);
-
-  return React.createElement(
-    'div',
-    { className: 'App' },
-
-    React.createElement(
-      'header',
-      { className: 'app-header' },
-
-      React.createElement(
-        'nav',
-        { className: 'nav-header' },
-        React.createElement('h1', { className: 'logo' }, `Bob's Cinema`),
-
-        React.createElement(
-          'ul',
-          { className: 'menu-list' },
-
-          [
-            React.createElement(MovieItem, { title: 'Home' }, null),
-            React.createElement(MovieItem, { title: 'Movies' }, null),
-          ]
-        )
-      )
-    )
+  return (
+    <div className="App">
+      <header className="app-header">
+        <nav className="nav-header">
+          <h1 className="logo">Bob's Cinema</h1>
+          <ul className="menu-list">
+            <MenuItem title="Home" />
+            <MenuItem title="Movies" />
+          </ul>
+        </nav>
+      </header>
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './MovieItem.css'
+import './MenuItem.css'
 
 const MovieItem = (props) => {
   return React.createElement('li', { className: 'movie-item' }, props.title);
