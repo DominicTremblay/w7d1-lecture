@@ -1,21 +1,11 @@
-.app-header {
-  background-color: #2874A6;
-  height: 4rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.App {
+  text-align: center;
+  background-color: black;
+  padding: 2rem;
 }
 
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.menu-list {
-  list-style: none;
-  display: flex;
-}
+
 
 .logo {
   margin: 0.5rem;
