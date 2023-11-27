@@ -3,6 +3,10 @@ import './App.css';
 import Header from './components/Header';
 import Poster from './components/Poster';
 
+let loading = false;
+
+
+
 const movies = [
   {
     id: 1,
@@ -35,6 +39,7 @@ const movies = [
 
 const moviesList = movies.map((movieObj) => (
   <Poster
+    key={movieObj.id}
     imgSource={movieObj.imgSource}
     title={movieObj.title}
     quote={movieObj.quote}
@@ -45,7 +50,10 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-      <main>{moviesList}</main>
+
+      {loading && <h2>Loading...</h2>}
+
+      <main>{!loading && moviesList}</main>
     </div>
   );
 }
