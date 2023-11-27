@@ -82,9 +82,28 @@
 
 
 ### 4. Using JSX
+
+  - XML => extensible markup langue => create custom markups
+  - JSX => mix of XML and JS
+
+
+
   - Syntax of JSX
+
+  ejs:
+    mix of HTML and JS => <% %>
+
+
   - Babel
+
+    - tool that transform our JSX component back into React.createElement
+
   - Rules of JSX
+
+    - you cannot use reserved words (ex. class of css => className) => camelCased
+    - {} represents a JavaScript expression within the markup
+    - either an opening and closing tags or a self-closing tag (like img)
+    - we can only have a single parent. No siblings allowed
 
 ### 5. Coding the Movies App with JSX
 

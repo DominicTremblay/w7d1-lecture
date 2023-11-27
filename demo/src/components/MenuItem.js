@@ -1,12 +1,20 @@
 import React from 'react';
+import './MenuItem.css'
 
 const MenuItem = function (props) {
 
-  // props = { menuLabel: 'Home' }
+  // props = { menuLabel: 'Home', color: 'red' }
 
-  console.log(props);
+  console.log(props)
 
-  return React.createElement('li', { className: 'menu-item' }, props.menuLabel);
+  return (
+    <li style={{color: props.color}} className='menu-item'>{ props.menuLabel }</li>
+  )
 };
 
+
+
 export default MenuItem;
+
+
+// React.createElement('li', { className: 'menu-item' }, props.menuLabel);

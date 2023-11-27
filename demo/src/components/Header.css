@@ -1,0 +1,25 @@
+.logo {
+  margin: 0.5rem;
+  color: gold;
+}
+
+.app-header {
+  background-color: #2874A6;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+}
+
